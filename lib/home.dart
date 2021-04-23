@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone/screens/chat_screen.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -36,7 +37,7 @@ class _HomeState extends State with SingleTickerProviderStateMixin {
         controller: _tabController,
         children: [
           Text("camera"),
-          Text("sohbet"),
+          ChatScreen(),
           Text("Durum"),
           Text("arama"),
         ],
